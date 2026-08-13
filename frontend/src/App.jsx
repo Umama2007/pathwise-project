@@ -7,7 +7,6 @@ import Dashboard from './pages/Dashboard'
 import Onboarding from './pages/Onboarding'
 import RoadmapDetail from './pages/RoadmapDetail'
 import Mentor from './pages/Mentor'
-import TestComponents from './pages/TestComponents'
 import Explore from './pages/Explore'
 import Community from './pages/Community'
 
@@ -41,7 +40,6 @@ export default function App() {
       <Route path="/mentor/:id" element={session ? <Mentor session={session} /> : <Navigate to="/login" />} />
       <Route path="/explore" element={<Explore session={session} />} />
       <Route path="/community" element={<Community session={session} />} />
-      <Route path="/test" element={<TestComponents />} />
     </Routes>
   )
 }
